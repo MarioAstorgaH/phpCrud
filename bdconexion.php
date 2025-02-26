@@ -13,7 +13,7 @@ while($fila = $resultado->fetch_assoc()){
     echo "<tr><td>".$fila['Nombre'] ."</td>";
     echo "<td>".$fila['Correo'] ."</td>"; 
     echo "<td>". $fila['Sueldo']. "</td>";
-    echo "<td><a href=''><img src='../bdPrueba/img/basura.png'></a></td></tr>";
+    echo "<td><a href='borrar.php ?k='" .$fila['Clave']. "><img src='../bdPrueba/img/basura.png'></a></td></tr>";
 }
 $conexion->close();
 echo"</table>";
